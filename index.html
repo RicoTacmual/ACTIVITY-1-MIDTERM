@@ -1,0 +1,437 @@
+<html lang="en" class="htlm">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Responsive Layout Example</title>
+        <!--this is for icons-->
+        <link rel="stylesheet" href=
+        "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+        </head>
+        <!--this is for css-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--icons from fontawsome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+
+            /*1st section*/
+            #sec1{
+                min-height: 90vh;
+                /*background: whitesmoke;8*/
+            }
+            .navbar{
+                height: 10vh;
+            }
+            #intro{
+                padding: 400px 0px 0px 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            #intro h1, #aboutme h1{
+                font-size: 48px;
+            }
+
+            #container1{
+                min-height: 90vh;
+            }
+
+            #button2{
+                margin-left: 10px;
+            }
+
+            #button1, #button2{
+                height: 50px;
+                width: 250px;
+                margin-top: 10px;
+            }
+
+            /*2nd section*/
+            #sec2{
+                min-height: 100vh;
+            }
+
+            #cards{
+                width: 600px;
+                height: 700px;
+            }
+
+            #viewproj{
+                height: 40px;
+                width: 180px;
+            }
+
+            /*3rd section*/
+            #sec3{
+                min-height: 100vh;
+            }
+
+            #container3{
+                min-height: 100vh;
+            }
+
+            #container1{
+                background: url(pictures/me.png) no-repeat;
+                background-size: 700px 800px;
+                background-position: right 100%;
+                /*background-position: 95% 100%;*/
+            }
+
+            #me2{
+                height: 100%;
+                width: 90%;
+                padding: 10% 5px 10% 5%;
+            }
+
+            #aboutme{
+                padding: 10% 0px 0px 0px;
+            }
+            
+            /*4th section*/
+            #sec4{
+                min-height: 100vh;
+            }
+
+
+
+            
+        </style>
+    </head>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div id="navigation" class="container px-5 bg-dark">
+                <a href="#"  class="navbar-brand" style="font-size: 38px;">R<span class="text-success">Q</span>T</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse" >
+                    <div class="navbar-nav" style="font-size: 18px;">
+                        <a href="#" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">Services</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                        <a href="#" class="nav-item nav-link ">Register</a>
+                        <a href="#" class="nav-item nav-link ">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!--SECTION1-->
+        <section id="sec1" >
+            <div id="container1" class="container px-5 ">
+                <div id="intro" class="col-sm-7 "><!--border-danger-->
+                    <h1>I'm <span class="text-success">Rico Tacmual</span> <br> a <span class="text-success">front-end</span>   developer</h1>
+                    <h5>I design and develop websites for other people to have easy access to information.</h5> 
+                    
+                    <button id="button1" type="button" class="btn btn-success text-white m-2"><h5><b>Hire me</b></h5></button>
+                    <button id="button2" type="button" class="btn btn-outline-success m-2"><h5><b>Portfolio</b></h5></button>
+                </div>
+            </div>
+        </section>
+
+    <!--SECTION2-->
+        <section id="sec2" class="bg-dark text-white " style="padding-top: 50px;">
+            <div class="container">
+                <h1 class="text-center text-success py-5">Recent projects</h1>
+            
+                <div id="container2" class="container row px-5 ">
+                    <div class="container row "><!--border border-danger-->
+                        <div class="col-sm-1">
+
+                        </div>
+                        <div class="col-sm-4 " ><!--border border-danger-->
+                            <div class="card" style="width: auto; height: 500px;">
+                                <img src="pictures/2nd_project.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center text-dark">
+                                    <h5 class="card-title">Parking Management System</h5>
+                                    <p class="card-text ">It's a software that enable drivers to park safely and efficently, It includes the payment system and security measures.</p>
+                                    <a href="#" class="btn btn-primary mb-5 position-absolute bottom-0 start-30 translate-middle-x">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-1">
+
+                        </div>
+                        <div class="col-sm-4 my-2" ><!--border border-danger-->
+                            <div class="card" style="width: auto; height: 500px;">
+                                <img src="pictures/1st_project.png" class="card-img-top" alt="...">
+                                <div class="card-body text-center text-dark">
+                                    <h5 class="card-title">Parking Management System</h5>
+                                    <p class="card-text ">It records sales transactions, 
+                                        monitors stocks and generates report of the total sales daily, weekly, and monthly.</p>
+                                    <a href="#" class="btn btn-primary mb-5 position-absolute bottom-0 start-30 translate-middle-x">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--SECTION3-->
+        <section id="sec3" class="bg-ligth text-dark py-5">
+            <div class="container">
+                <div  style=" max-width: 1500px;"  class="row">
+                    <div class="col-sm-5 "><!--border-danger-->
+                        <img src="pictures/me2.jpg" id="me2">
+                    </div>
+    
+                    <div id="aboutme" class="col-sm-7 p-5"><!--border-danger-->
+                        <h1 class="text-success">About me</h1>
+                        <h5>
+                            I finished my bachelor of science in information technology at the 
+                            Pamantasan Lungsod ng Muntilupa. I have experience developing a desktop 
+                            application using Visual Studio using the C# language, and I also have 
+                            the basic knowledge of developing a website using HTML, CSS, and Bootstrap.
+                        </h5>
+    
+                        <div class="row">
+                            <div class="row my-3 ">
+                                <div class="col-sm-4 ">
+                                    <h5><i  class="bi bi-person fa-2x"></i><span class="mx-2"><b> Name :</b></span></h5>
+                                </div>
+                                <div class="col-sm-8 py-3">
+                                    <h5>Rico Q. Tacmual</h5>
+                                </div>
+                            </div>
+                            <div class="row my-3 ">
+                                <div class="col-sm-4">
+                                    <h5><i  class="bi bi-telephone  fa-2x"></i><span class="mx-2"><b> Contact :</b></span></h5>
+                                </div>
+                                <div class="col-sm-8 py-3">
+                                    <h5>0967124523</h5></h5>
+                                </div>
+                            </div>
+                            <div class="row my-3 ">
+                                <div class="col-sm-4">
+                                    <h5><i  class="bi bi-envelope fa-2x"></i><span class="mx-2"><b> Email :</b></span></h5>
+                                </div>
+                                <div class="col-sm-8 py-3">
+                                    <h5>Rico@gmail.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+    
+                        <h1 class="text-success">My Hobbies</h1>
+                        <div class=" row my-5 ">
+                            <!--border border-danger--> <div class="col-sm-3"> <h5><i class="bi bi-controller fa-2x"></i>&nbsp; <b>Games</b></h5></div>
+                            <div class="col-sm-3 "> <h5><i class="bi bi-camera fa-2x"></i>&nbsp; <b>Photo</b></h5></div>
+                            <div class="col-sm-3"> <h5><i class="bi bi-film fa-2x"></i>&nbsp; <b>Movie</b></h5></div>
+                            <div class="col-sm-3"> <h5><i class='fas fa-basketball-ball' style='font-size: 34px;'></i>&nbsp; <b>Basketball</b></h5></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="sec4" class="bg-dark text-light py-5">
+            <div class="container">
+                <div id="container4"class="containter "><!--border border-danger-->
+                    <h1 class="text-center text-success">Skills</h1>
+                    
+                    <div id="container2" class="container row px-5 ">
+                        <div class="container row "><!--border border-danger-->
+                            <div class="col-sm-4 " ><!--border border-danger-->
+                                <div class="card my-5" >
+                                    <img src="pictures/picsart.jpg" style="height: 200px;"  class="card-img-top " alt="...">
+                                    <div class="card-body text-center text-dark bg-light">
+                                        <h5 class="card-title"><b>Photo Editing</b> </h5>
+                                        <h5>Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 " ><!--border border-danger-->
+                                <div class="card my-5" >
+                                    <img src="pictures/capcut.jpg" style="height: 200px;"  class="card-img-top " alt="...">
+                                    <div class="card-body text-center text-dark bg-light">
+                                        <h5 class="card-title"><b>Video Editing</b> </h5>
+                                        <h5>Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 " ><!--border border-danger-->
+                                <div class="card my-5" >
+                                    <img src="pictures/coding.png" style="height: 200px;"  class="card-img-top " alt="...">
+                                    <div class="card-body text-center text-dark bg-light">
+                                        <h5 class="card-title"><b>Coding/Programming</b> </h5>
+                                        <h5>Alice is a freelance web designer and developer based in London. She is specialized in HTML5, CSS3, JavaScript, Bootstrap, etc.</h5>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+    
+                <div id="container4" class="container ">
+                    <div class="container">
+                        <h1 class="text-center text-success py-5">Education background</h1>
+                    
+                        <div id="container4" class="container row">
+                            <div  class="col-sm-4" >
+                                <h1><b>Primary</b> </h1>
+                                <h5>San Pedro Elementary School</h5>
+                            </div>
+    
+                            <div class="col-sm-4">
+                                <h1><b>Secondary</b> </h1>
+                                <h5>Adeline1 National High School</h5>
+                            </div>
+    
+                            <div class="col-sm-4">
+                                <h1><b>Tertiary</b> </h1>
+                                <h5>Pamantasan ng Lungsod ng Muntinlupa</h5>
+                                <h5><i class="bi bi-dot  py-5"> Bachelor of Science information Technology</i></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+        <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <div class="container">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+            
+            <!-- Right -->
+                <div>
+                    <!-- Facebook -->
+                    <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                <i class="fab fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"></a>
+                <i class="fab fa-github"></i>
+                </a>
+
+                </div>
+                <!-- Right -->
+            </section>
+        </div>
+        
+    <!-- Section: Social media -->
+    
+        <!-- Section: Links  -->
+        <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Rico Tacmual
+                </h6>
+                <p>
+                    This website contains my personal information, skills, 
+                    education background, and recent projects. It will serve 
+                    as a basis to determine if my current skills meet the expectations 
+                    of the company that I am going to work with.
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Tool use
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">HTML</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">CSS</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Bootstrap</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                Menu
+                </h6>
+                <p>
+                <a href="#!" class="text-reset">Home</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">About</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">Services</a>
+                </p>
+                <p>
+                <a href="#!" class="text-reset">register</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                info@example.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        </section>
+        <!-- Section: Links  -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+        <!-- Footer -->
+</body>
+
+
+</html>
