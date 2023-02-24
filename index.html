@@ -95,7 +95,11 @@
                 min-height: 100vh;
             }
 
-
+            @media only screen and (max-width: 600px) {
+                #container1{
+                background-image: none;
+            }
+            }
 
             
         </style>
@@ -115,8 +119,8 @@
                         <a href="#" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-item nav-link ">Register</a>
-                        <a href="#" class="nav-item nav-link ">Login</a>
+                        <button type="button" class="btn btn-outline-primary mx-2 my-2">Register</button>
+                        <button type="button" class="btn btn-primary mx-2 my-2">Login</button>
                     </div>
                 </div>
             </div>
